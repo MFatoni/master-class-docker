@@ -77,3 +77,21 @@ docker container inspect _container_name
 ```
 
 > See container configuration.
+
+```
+docker container create --name _container_name -p _outside_port:_internal_port -e _HOST_NAME=_container_name -e _HOST_PORT=_outside_host_port
+```
+
+> Create container that connect to another container
+
+```
+docker network create _network_name
+```
+
+> Create network
+
+```
+docker network connect _network_name _container_name
+```
+
+> Put container into same network
