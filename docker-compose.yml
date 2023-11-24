@@ -1,0 +1,18 @@
+version: '3.8'
+name: master_class_docker
+services:
+  networking:
+    container_name: networking
+    ports:
+      - 8080:8080
+    image: master-class-docker:0.1-networking
+    # depends_on:
+    #   - mysql
+    env_file:
+      - web-service/env.list
+    networks:
+      - master_class_docker
+
+networks:
+  master_class_docker:
+    name: master_class_docker

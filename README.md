@@ -31,7 +31,7 @@ docker container ls --all
 > See available container. If --all not included it will only show the list of running container.
 
 ```
-docker container create --name _container_name  -p _outside_port:_internal_port -e _env_var_name=_env_var_value --env-file _file_name _images_name:_tags_name
+docker container create --name _container_name -v _volume_name:_internal_directory -p _outside_port:_internal_port -e _env_var_name=_env_var_value --env-file _file_name _images_name:_tags_name
 ```
 
 > Create container. Random container name will be created if parameter name is not set.
