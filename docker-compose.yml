@@ -11,8 +11,9 @@ services:
     env_file:
       - web-service/env.list
     networks:
-      - master_class_docker
+      - intranet
 
 networks:
-  master_class_docker:
-    name: master_class_docker
+  intranet:
+    name: intranet
+    external : true

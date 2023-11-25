@@ -95,3 +95,21 @@ docker network connect _network_name _container_name
 ```
 
 > Put container into same network
+
+```
+docker exec -t -i _container_name /bin/bash
+```
+
+> Enter docker container
+
+```
+docker _type[container,network,image,system] prune -a volumes
+```
+
+> Remove unused data
+
+```
+docker system df
+```
+
+> Show total size
